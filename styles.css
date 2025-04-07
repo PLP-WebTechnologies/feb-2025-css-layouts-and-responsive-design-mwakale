@@ -8,9 +8,77 @@
   body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
   }
   
-  /* Navigation Bar */
+  h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  ol {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  form label, form input, form select, form fieldset {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #575757;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Navigation Bar*/
   .navbar {
     background-color: #333;
     color: #fff;
@@ -20,26 +88,29 @@
   .navbar nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 0;
+    background-color: #333;
   }
   
   .navbar nav ul li {
-    margin: 0 15px;
+    margin: 0;
   }
   
   .navbar nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-  
-
+    padding: 10px 20px;
+    display: block;
   }
   
   .navbar nav ul li a:hover {
     text-decoration: underline;
-    background-color: #f39c12;
-   color: #fff;
-      }
+    background-color: #575757;
+    border-radius: 5px;
+    color: #fff;
+  }
   
   /* Layout: Flexbox and Grid */
   .content {
@@ -83,10 +154,27 @@
   
     .navbar nav ul {
       flex-direction: column;
+    
     }
   
     .navbar nav ul li {
       margin: 10px 0;
+    }
+
+    body {
+      font-size: 16px;
+    }
+  
+    table th, table td {
+      font-size: 14px;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    form label, form input, form select, form fieldset {
+      font-size: 14px;
     }
   }
   
@@ -103,5 +191,54 @@
     footer {
       font-size: 14px;
     }
+
+    body {
+      font-size: 14px;
+    }
+  
+    h1, h2 {
+      font-size: 18px;
+    }
+  
+    table th, table td {
+      font-size: 12px;
+      padding: 5px;
+    }
+  
+    form {
+      padding: 10px;
+    }
+  
+    form label, form input, form select, form fieldset {
+      font-size: 12px;
+    }
+  
+    form input[type="submit"] {
+      width: 100%;
+    }
+  }
+
+  /* Section Styles with Color Differences */
+  #home {
+    background-color: #ffebcd; /* Blanched Almond */
+    padding: 50px 20px;
+    min-height: 100vh;
   }
   
+  #about {
+    background-color: #add8e6; /* Light Blue */
+    padding: 50px 20px;
+    min-height: 100vh;
+  }
+  
+  #services {
+    background-color: #90ee90; /* Light Green */
+    padding: 50px 20px;
+    min-height: 100vh;
+  }
+  
+  #contact {
+    background-color: #f08080; /* Light Coral */
+    padding: 50px 20px;
+    min-height: 100vh;
+  }
